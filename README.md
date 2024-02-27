@@ -1,3 +1,3 @@
 # CarLibraryProject 
-For project.
+For project. Project idea may change in the future.
 <br>Contributors: Byrant, David, Sirwinsome
