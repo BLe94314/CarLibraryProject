@@ -1,5 +1,5 @@
 public class Car {
-    // Initialized variables
+    // Initialized variables for car object
     private String name;
     private String make;
     private int year;
@@ -7,7 +7,7 @@ public class Car {
     private int wheels;
     private int vin;
 
-    // Constructors
+    // Constructors for car object
     public Car(String name, String make, int year, String color, int wheels, int vin) {
         this.name = name;
         this.make = make;
@@ -18,51 +18,51 @@ public class Car {
     }
 
     // Getters and Setters
-    public int getWheels() {
-        return wheels;
-    }
-
-    public void setWheels(int wheels) {
-        this.wheels = wheels;
-    }
-
-    public int getVin() {
-        return vin;
-    }
-
-    public void setVin(int vin) {
-        this.vin = vin;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public String getColor() {
+        return color;
     }
 
     public String getMake() {
         return make;
     }
 
-    public void setMake(String make) {
-        this.make = make;
+    public String getName() {
+        return name;
+    }
+
+    public int getVin() {
+        return vin;
+    }
+
+    public int getWheels() {
+        return wheels;
     }
 
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVin(int vin) {
+        this.vin = vin;
+    }
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 }
