@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class OwnerInfo {
     // Owner's information
     private String firstName;
