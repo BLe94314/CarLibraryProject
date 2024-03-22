@@ -1,3 +1,7 @@
+// CarLibraryProject, Author: Sir Winsome McMillion, Today's Date: 03/22/2024
+/* Short Description - The purpose of this class is to have the user input the owner operator's information for both car 1 & car 2. Information gathered from the user consists of the
+following: First Name, Last Name, State, Registration Date, Remaining Balance, Dealership Nmae, and License Plate. */ 
+
 public class OwnerInfo {
     // Owner's information
     private String firstName;
