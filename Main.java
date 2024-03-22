@@ -29,7 +29,6 @@ public class Main {
         System.out.println("Enter license plate for Car 1:");
         String licensePlate1 = scanner.nextLine();
 
-        
         System.out.println("Enter owner's first name for Car 2:");
         String firstName2 = scanner.nextLine();
 
