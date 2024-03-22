@@ -1,5 +1,3 @@
-package CarLibraryProject;
-
 import java.util.Date;
 
 public class OwnerInfo {
