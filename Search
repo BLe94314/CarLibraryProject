@@ -9,19 +9,23 @@ public class Search {
 	public CarInventory searchByMake(CarInventory cars, String make) {	
 		return result;
 	}
-	
+
+	//search cars by name
 	public CarInventory searchByName(CarInventory cars, String name) {
 		return result;
 	}
-	
+
+	//search cars by year
 	public CarInventory searchByYear(CarInventory cars, int year) {
 		return result;
 	}
-	
+
+	//search cars by color
 	public CarInventory searchByColor(CarInventory cars, String color) {
 		return result;
 	}
-	
+
+	//search cars by vin
 	public CarInventory searchByVin(CarInventory cars, int vin) {
 		return result;
 	}
