@@ -1,8 +1,11 @@
+import java.sql.Date;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         @SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Car 1 owner information
         System.out.println("Enter owner's first name for Car 1:");
@@ -16,12 +19,12 @@ public class Main {
 
         System.out.println("Enter registration date for Car 1 (YYYY-MM-DD):");
         @SuppressWarnings("unused")
-		String registrationDateStr1 = scanner.nextLine();
-        Date registrationDate1 = new Date();
+        String registrationDateStr1 = scanner.nextLine();
+        Date registrationDate1 = new Date(0);
 
         System.out.println("Enter remaining balance for Car 1:");
         double remainingBalance1 = scanner.nextDouble();
-        scanner.nextLine(); 
+        scanner.nextLine();
 
         System.out.println("Enter dealership name for Car 1:");
         String dealershipName1 = scanner.nextLine();
@@ -40,12 +43,12 @@ public class Main {
 
         System.out.println("Enter registration date for Car 2 (YYYY-MM-DD):");
         @SuppressWarnings("unused")
-		String registrationDateStr2 = scanner.nextLine();
-        Date registrationDate2 = new Date(); 
+        String registrationDateStr2 = scanner.nextLine();
+        Date registrationDate2 = new Date(0);
 
         System.out.println("Enter remaining balance for Car 2:");
         double remainingBalance2 = scanner.nextDouble();
-        scanner.nextLine(); 
+        scanner.nextLine();
 
         System.out.println("Enter dealership name for Car 2:");
         String dealershipName2 = scanner.nextLine();

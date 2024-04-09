@@ -1,3 +1,10 @@
+/*
+ * Project Name: Car Library Project 
+ * Class Name: Car.java
+ * Author Name: Bryant Le
+ * Date (Last Updated): 08/08/2024
+ * Description: This class declares variables as private, and utilizes get and set methods to update the variables. This allows for better control of the class attributes and methods. "Main.java" tests the functionality of this class.
+ */
 public class Car {
     // Initialized variables for car object
     private String name;
@@ -17,51 +24,62 @@ public class Car {
         this.vin = vin;
     }
 
-    // Getters and Setters
+    // Getter for car color
     public String getColor() {
         return color;
     }
 
+    // Getter for car make
     public String getMake() {
         return make;
     }
 
+    // Getter for car name
     public String getName() {
         return name;
     }
 
+    // Getter for car vin
     public int getVin() {
         return vin;
     }
 
+    // Getter for car wheels
     public int getWheels() {
         return wheels;
     }
 
+    // Getter for car year
     public int getYear() {
         return year;
     }
 
+    // Setter for car color
     public void setColor(String color) {
         this.color = color;
     }
 
+    // Setter for car make
     public void setMake(String make) {
         this.make = make;
     }
 
+    // Setter for car name
     public void setName(String name) {
         this.name = name;
     }
 
+    // Setter for car vin
     public void setVin(int vin) {
         this.vin = vin;
     }
 
+    // Setter for car wheels
     public void setWheels(int wheels) {
         this.wheels = wheels;
     }
 
+    // Setter for car year
     public void setYear(int year) {
         this.year = year;
     }

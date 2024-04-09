@@ -1,3 +1,10 @@
+/*
+ * Project Name: Car Library Project 
+ * Class Name: CarInventory.java
+ * Author Name: Bryant Le
+ * Date (Last Updated): 08/08/2024
+ * Description: This class declares an array of car objects and contains an iterative count for the number of total car objects. All car objects will be printed into the console and/or GUI class for the user. The user will proceed to rent one of the available cars. Functionality will be tested in the "Main.java" class.
+ */
 public class CarInventory {
     // Initialized car and num (counter) variables
     private Car[] cars;
@@ -30,7 +37,8 @@ public class CarInventory {
             System.out.println("--- Owner Information ---");
             System.out.println("First Name: " + owners[i].getFirstName() + "\nLast Name: " + owners[i].getLastName()
                     + "\nState: " + owners[i].getState() + "\nRegistration Date: " + owners[i].getRegistrationDate()
-                    + "\nRemaining Balance: " + owners[i].getRemainingBalance() + "\nDealership Name: " + owners[i].getDealershipName()
+                    + "\nRemaining Balance: " + owners[i].getRemainingBalance() + "\nDealership Name: "
+                    + owners[i].getDealershipName()
                     + "\nLicense Plate: " + owners[i].getLicensePlate() + "\n");
         }
     }
