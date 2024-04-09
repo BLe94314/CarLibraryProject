@@ -11,5 +11,6 @@ is purchase the car. The model and make of both cars are already pre defined. We
 <br>OwnerInfo.java: SirWinsome
 <br>Car.java: Bryant
 <br>CarRentalGUI: David
+<br>Search: David
 <br>CarInventory: Bryant
 <br>Main.java: TBD (Functionality will likely be moved CarRentalGUI).
