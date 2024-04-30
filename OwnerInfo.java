@@ -5,6 +5,7 @@ following: First Name, Last Name, State, Registration Date, Remaining Balance, D
 import java.sql.Date;
 
 public class OwnerInfo {
+
     // Owner's information
     private String firstName;
     private String lastName;
