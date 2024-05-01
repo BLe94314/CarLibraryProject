@@ -67,19 +67,19 @@ public class Main extends Application {
         Button rentButton = new Button("Rent");
         rentButton.setOnAction(e -> {
             // Check if the user already has a rented car
-            boolean alreadyRented = false;
+            boolean isRenting = false;
             for (Car car : inventory.getCars()) {
                 if (car != null && !car.getAvailable()) {
-                    alreadyRented = true;
+                    isRenting = true;
                     break;
                 }
             }
 
             // Checks to see if the user is currently renting a car
-            if (alreadyRented) {
+            if (isRenting) {
                 // Show an alert that the user already has a rented car
                 Alert alert = new Alert(AlertType.WARNING);
-                alert.setTitle("Already Rented");
+                alert.setTitle("Already Renting");
                 alert.setHeaderText("INVALID INPUT!");
                 alert.setContentText("You already have a rented car. Please return it before renting another one.");
                 alert.showAndWait();
@@ -113,7 +113,7 @@ public class Main extends Application {
                 } else {
                     // show an alert if no radio button is not selected
                     Alert alert = new Alert(AlertType.WARNING);
-                    alert.setTitle("Radio button was not selected!");
+                    alert.setTitle("Radio button not selected!");
                     alert.setHeaderText("INVALID INPUT!");
                     alert.setContentText("Please select a car to rent.");
                     alert.showAndWait();
@@ -200,16 +200,15 @@ public class Main extends Application {
         // Check if there is a rented car
         for (Car car : inventory.getCars()) {
             if (car != null && !car.getAvailable()) {
-                // Update availability to "Yes"
+                // Update availability
                 car.setAvailable(true);
+                refreshCars();
                 // Show confirmation message that car has returned successfully
                 Alert confirmation = new Alert(AlertType.INFORMATION);
                 confirmation.setTitle("Car Rental");
                 confirmation.setHeaderText("SUCCESS!");
                 confirmation.setContentText("Car returned successfully.");
                 confirmation.showAndWait();
-                // Refresh the inventory display to update the car's availability
-                refreshCars();
                 return;
             }
         }
