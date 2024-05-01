@@ -129,9 +129,4 @@ public class Car {
     public void setYear(int year) {
         this.year = year;
     }
-
-    // Setter for car availability
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
 }
