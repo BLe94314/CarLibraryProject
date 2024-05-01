@@ -1,9 +1,14 @@
+package application;
+
 /*
  * Project Name: Car Library Project 
  * Class Name: Car.java
  * Author Name: Bryant Le
- * Date (Last Updated): 04/08/2024
- * Description: This class declares variables as private, and utilizes get and set methods to update the variables. This allows for better control of the class attributes and methods. "Main.java" tests the functionality of this class.
+ * Date (Last Updated): 05/01/2024
+ * Description: This class declares variables as private, 
+ * and utilizes get and set methods to update the variables. 
+ * This allows for better control of the class attributes and methods. 
+ * "Main.java" tests the functionality of this class.
  */
 public class Car {
 
@@ -16,6 +21,7 @@ public class Car {
     private int wheels;
     private int vin;
     private boolean available;
+    private OwnerInfo ownerInfo;
 
     // Constructors for car object
     public Car(int CarID, String name, String make, int year, String color, int wheels, int vin, boolean available) {
@@ -27,6 +33,11 @@ public class Car {
         this.wheels = wheels;
         this.vin = vin;
         this.available = available;
+    }
+
+    // Getter for car availability
+    public boolean getAvailable() {
+        return available;
     }
 
     // Getter for Car ID
@@ -49,6 +60,11 @@ public class Car {
         return name;
     }
 
+    // Getter for OwnerInfo
+    public OwnerInfo getOwnerInfo() {
+        return ownerInfo;
+    }
+
     // Getter for car vin
     public int getVin() {
         return vin;
@@ -64,9 +80,9 @@ public class Car {
         return year;
     }
 
-    // Getter for car availability
-    public boolean getAvailable() {
-        return available;
+    // Setter for car availability
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 
     // Setter for Car ID
@@ -89,6 +105,11 @@ public class Car {
         this.name = name;
     }
 
+    // Setter for Owner Info
+    public void setOwnerInfo(OwnerInfo ownerInfo) {
+        this.ownerInfo = ownerInfo;
+    }
+
     // Setter for car vin
     public void setVin(int vin) {
         this.vin = vin;
@@ -102,10 +123,5 @@ public class Car {
     // Setter for car year
     public void setYear(int year) {
         this.year = year;
-    }
-
-    // Setter for car availability
-    public void setAvailable(boolean available) {
-        this.available = available;
     }
 }
