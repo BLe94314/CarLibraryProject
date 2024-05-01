@@ -69,6 +69,11 @@ public class Car {
         return available;
     }
 
+        // Getter for OwnerInfo
+    public OwnerInfo getOwnerInfo() {
+    	return ownerInfo;
+    }
+
     // Setter for Car ID
     public void setCarID(int CarID) {
         this.CarID = CarID;
@@ -107,5 +112,10 @@ public class Car {
     // Setter for car availability
     public void setAvailable(boolean available) {
         this.available = available;
+    }
+
+        // Setter for Owner Info
+    public void setOwnerInfo(OwnerInfo ownerInfo) {
+    	this.ownerInfo = ownerInfo;
     }
 }
