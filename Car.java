@@ -14,7 +14,7 @@ public class Car {
 
     // Initialized variables for car object
     private int CarID;
-    private String name;
+    private String model;
     private String make;
     private int year;
     private String color;
@@ -24,9 +24,9 @@ public class Car {
     private OwnerInfo ownerInfo;
 
     // Constructors for car object
-    public Car(int CarID, String name, String make, int year, String color, int wheels, int vin, boolean available) {
+    public Car(int CarID, String model, String make, int year, String color, int wheels, int vin, boolean available) {
         this.CarID = CarID;
-        this.name = name;
+        this.model = model;
         this.make = make;
         this.year = year;
         this.color = color;
@@ -55,9 +55,9 @@ public class Car {
         return make;
     }
 
-    // Getter for car name
-    public String getName() {
-        return name;
+    // Getter for car model
+    public String getModel() {
+        return model;
     }
 
     // Getter for OwnerInfo
@@ -85,6 +85,11 @@ public class Car {
         this.available = available;
     }
 
+        // Getter for OwnerInfo
+    public OwnerInfo getOwnerInfo() {
+    	return ownerInfo;
+    }
+
     // Setter for Car ID
     public void setCarID(int CarID) {
         this.CarID = CarID;
@@ -100,9 +105,9 @@ public class Car {
         this.make = make;
     }
 
-    // Setter for car name
-    public void setName(String name) {
-        this.name = name;
+    // Setter for car model
+    public void setModel(String model) {
+        this.model = model;
     }
 
     // Setter for Owner Info
@@ -123,5 +128,10 @@ public class Car {
     // Setter for car year
     public void setYear(int year) {
         this.year = year;
+    }
+
+    // Setter for car availability
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 }
