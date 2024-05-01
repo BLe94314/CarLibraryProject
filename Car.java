@@ -15,15 +15,18 @@ public class Car {
     private String color;
     private int wheels;
     private int vin;
+    private boolean available;
 
     // Constructors for car object
-    public Car(String name, String make, int year, String color, int wheels, int vin) {
+    public Car(int CarID, String name, String make, int year, String color, int wheels, int vin, boolean available) {
+        this.CarID = CarID;
         this.name = name;
         this.make = make;
         this.year = year;
         this.color = color;
         this.wheels = wheels;
         this.vin = vin;
+        this.available = available;
     }
 
     // Getter for Car ID
@@ -61,6 +64,11 @@ public class Car {
         return year;
     }
 
+    // Getter for car availability
+    public boolean getAvailable() {
+        return available;
+    }
+
     // Setter for Car ID
     public void setCarID(int CarID) {
         this.CarID = CarID;
@@ -94,5 +102,10 @@ public class Car {
     // Setter for car year
     public void setYear(int year) {
         this.year = year;
+    }
+
+    // Setter for car availability
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 }
