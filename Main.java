@@ -57,7 +57,7 @@ public class Main extends Application {
         // Add radio buttons for each available car
         for (Car car : inventory.getCars()) {
             if (car != null && car.getAvailable()) {
-                RadioButton radioButton = new RadioButton(car.getYear() + " " + car.getMake() + " " + car.getName());
+                RadioButton radioButton = new RadioButton(car.getYear() + " " + car.getModel() + " " + car.getName());
                 radioButton.setToggleGroup(carGroup);
                 rentLayout.getChildren().add(radioButton);
             }
@@ -91,7 +91,7 @@ public class Main extends Application {
 
                     for (Car car : inventory.getCars()) {
                         if (car != null && car.getAvailable()
-                                && selectedCar.equals(car.getYear() + " " + car.getMake() + " " + car.getName())) {
+                                && selectedCar.equals(car.getYear() + " " + car.getModel() + " " + car.getName())) {
                             car.setAvailable(false);
                             break;
                         }
@@ -173,7 +173,7 @@ public class Main extends Application {
                 // Create labels for car information
 
                 Label carIDLabel = new Label(Integer.toString(car.getCarID()));
-                Label makeLabel = new Label(car.getMake());
+                Label makeLabel = new Label(car.getModel());
                 Label modelLabel = new Label(car.getName()); // Assuming getName() is the model name
                 Label yearLabel = new Label(Integer.toString(car.getYear()));
                 Label colorLabel = new Label(car.getColor());
@@ -337,7 +337,7 @@ public class Main extends Application {
             if (car != null) {
                 // Create labels for car information
                 Label carIDLabel = new Label(Integer.toString(car.getCarID()));
-                Label makeLabel = new Label(car.getMake());
+                Label makeLabel = new Label(car.getModel());
                 Label modelLabel = new Label(car.getName()); // Assuming getName() is the model name
                 Label yearLabel = new Label(Integer.toString(car.getYear()));
                 Label colorLabel = new Label(car.getColor());

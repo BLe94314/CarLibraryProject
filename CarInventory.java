@@ -49,7 +49,7 @@ public class CarInventory {
     public void output() {
         for (int i = 0; i < numOfCars && i < numOfOwners; i++) {
             System.out.println("--- Car ---");
-            System.out.println(cars[i].getCarID() + "\nName: " + cars[i].getName() + "\nMake: " + cars[i].getMake()
+            System.out.println(cars[i].getCarID() + "\nName: " + cars[i].getName() + "\nMake: " + cars[i].getModel()
                     + "\nYear: " + cars[i].getYear() + "\nColor: " + cars[i].getColor() + "\nNumber of Wheels: "
                     + cars[i].getWheels() + "\nVIN: " + cars[i].getVin() + "\nAvailable: " + cars[i].getAvailable());
             System.out.println("--- Owner Information ---");
