@@ -3,7 +3,7 @@ package application;
 /*
  * Project Name: Car Library Project 
  * Class Name: OwnerInfo.java
- * Author Name: Sir Winsome McMillion, 
+ * Author Name: Sir Winsome McMillion, Bryant Le, David Tamietto
  * Date (Last Updated): 05/01/2024
  * Description: This class uses the previous classes to display a 
  * GUI of the car rental service. 
@@ -41,6 +41,8 @@ public class Main extends Application {
 
     private void openRentCarStage() {
         Stage rentStage = new Stage();
+        // Prevents the user from making inputs onto the primary stage when the rent
+        // window is open
         rentStage.initModality(Modality.APPLICATION_MODAL);
         rentStage.setTitle("Rent a Car");
         rentStage.setResizable(false);
