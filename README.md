@@ -2,15 +2,13 @@
 For project. Project idea may change in the future.
 <br>Contributors: Bryant, David, SirWinsome
 
-Edited: 03/22/2024 by Sir Winsome McMillion, CarLibraryProject 
+Edited: 05/01/2024 by Bryant Le, David Tamietto 
 
-This project has the user enter the owner operator's credentials and attach each user ID to Car 1 & Car 2.
-These cars are part of dealership car inventor that was recently purchased from a customer and the information being enter at the start of the code is the user that 
-is purchase the car. The model and make of both cars are already pre defined. We intergrated required user inputs to the code in order to add dynamic functionality to the program. 
+This project has the user rent a single car from a list of available cars.
 
 <br>OwnerInfo.java: SirWinsome
 <br>Car.java: Bryant
 <br>CarRentalGUI: David
 <br>Search: David
 <br>CarInventory: Bryant
-<br>Main.java: TBD (Functionality will likely be moved CarRentalGUI).
+<br>Main.java: David, Bryant
